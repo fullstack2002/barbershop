@@ -1,0 +1,42 @@
+:root {
+  --primary-font-family: "Open Sans", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+  --primary-text-color-theme-dark:#9DA4BD;
+  --primary-text-color-theme-light: #555555;
+  --secondary-text-color-theme-dark:#FFFFFF;
+  --secondary-text-color-theme-light: #303030;
+}
+body {
+  font-family: var(--primary-font-family);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
