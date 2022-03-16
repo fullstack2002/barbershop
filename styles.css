@@ -172,3 +172,98 @@ address {
 	color: #9da4bd;
 }
 /* ADVANTAGES */
+.advantages-list-quantity {
+	font-weight: 700;
+font-size: 42px;
+line-height: 57px;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #303030;
+}
+.advantages-list-description {
+	font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+text-align: center;
+
+color: #303030;
+}
+.description-theme-light {
+	font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+
+letter-spacing: 0.02em;
+
+color: var(--primary-text-color-theme-light);
+}
+/* EMPLOYEES */
+.employees-name {
+	font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #303030;
+}
+.employees-position {
+	font-weight: 400;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: 0.02em;
+
+color: #FF6C00;
+}
+/* PICTURES */
+/* CONTACT FORM */
+/* CONTACTS */
+/* FOOTER */
+.contact-list-item {
+	font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+
+letter-spacing: 0.02em;
+
+color: #9DA4BD;
+}
+.footer-overtitle {
+	font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+/* identical to box height */
+
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+/* color: #FFFFFF; */
+}
+.footer-work-hours {
+	font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+/* identical to box height, or 167% */
+
+letter-spacing: 0.02em;
+
+color: #9DA4BD;
+}
+.copyright {
+	font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+/* identical to box height */
+
+letter-spacing: 0.2em;
+
+color: #9DA4BD;
+}
