@@ -53,6 +53,8 @@ address {
 	margin-right: auto;
 }
 .overtitle {
+	display: flex;
+	align-items: center;
 	margin-bottom: 20px;
 	font-weight: 600;
 	font-size: 11px;
@@ -235,6 +237,21 @@ address {
 /* .title-theme-dark {
   color: var(--secondary-text-color-theme-dark);
 } */
+.services-list-wrapper {
+	display: flex;
+}
+.services-list {
+	flex-basis: 50%;
+	padding: 30px 40px;
+	margin-bottom: 50px;
+}
+.services-list-item {
+	display: flex;
+	justify-content: space-between;
+}
+.services-list-item:not(:last-child) {
+	margin-bottom: 20px;
+}
 .services-list-name,
 .services-list-price {
 	font-weight: 400;
@@ -246,7 +263,35 @@ address {
 
 	color: #9da4bd;
 }
+.services-modal-button {
+	display: block;
+	margin: 0 auto;
+}
 /* ADVANTAGES */
+.advantages-container {
+	display: flex;
+	justify-content: space-between;
+}
+.advantages-left-side,
+.advantages-right-side {
+	flex-basis: calc((100% - 30px) / 2);
+}
+.advantages-list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 370px;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 auto;
+}
+.advantages-list-item {
+	width: 170px;
+	min-height: 133px;
+	padding: 21px;
+}
+.advantages-list-item:nth-child(even) {
+	margin-top: 30px;
+}
 .advantages-list-quantity {
 	font-weight: 700;
 	font-size: 42px;
@@ -274,8 +319,32 @@ address {
 
 	color: var(--primary-text-color-theme-light);
 }
+.advantages-desctiption {
+	max-width: 460px;
+	margin-top: 20px;
+}
 /* EMPLOYEES */
+.employees-section .title {
+	margin-bottom: 44px;
+}
+.employees-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -30px;
+  margin-top: -30px;
+}
+.employees-card {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.employees-content-wrapper {
+	padding-top: 30px;
+	padding-left: 82px;
+	padding-right: 82px;
+}
 .employees-name {
+	margin-bottom: 8px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 25px;
@@ -297,7 +366,21 @@ address {
 
 	color: #ff6c00;
 }
-/* PICTURES */
+/* GALLERY */
+.gallery-overtitle {
+	margin-bottom: 44px;
+}
+.gallery-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -30px;
+	margin-top: -30px;
+}
+.gallery-list-item {
+	flex-basis: calc((100% - 120px) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 /* CONTACT FORM */
 /* CONTACTS */
 /* FOOTER */
