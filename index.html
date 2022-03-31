@@ -4,6 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<title>Barbershop</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
 			rel="stylesheet"
@@ -16,62 +19,67 @@
 			referrerpolicy="no-referrer"
 		/>
 		<link rel="stylesheet" href="./styles.css" />
-		<title>Barbershop</title>
 	</head>
 	<body>
 		<!-- HEADER -->
-		<header>
-			<nav>
-				<a href="">
-					<img src="./images/Logo.svg" alt="лого" />
-				</a>
-				<ul class="list">
-					<li class="nav-list-item">
-						<a class="nav-list-link link" href="">О нас</a>
-					</li>
-					<li class="nav-list-item">
-						<a class="nav-list-link link" href="">Услуги и цены</a>
-					</li>
-					<li class="nav-list-item">
-						<a class="nav-list-link link" href="">Мастера</a>
-					</li>
-					<li class="nav-list-item">
-						<a class="nav-list-link link" href="">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<a class="contact-number link" href="tel:+38 044 111 11 11"
-				>+38 044 111 11 11</a
-			>
-			<button class="modal-button" type="button">онлайн-запись</button>
+		<header class="header">
+			<div class="container header-container">
+				<nav class="navigation">
+					<a href="">
+						<img src="./images/Logo.svg" alt="лого" />
+					</a>
+					<ul class="nav-list list">
+						<li class="nav-list-item">
+							<a class="nav-list-link link" href="">О нас</a>
+						</li>
+						<li class="nav-list-item">
+							<a class="nav-list-link link" href="">Услуги и цены</a>
+						</li>
+						<li class="nav-list-item">
+							<a class="nav-list-link link" href="">Мастера</a>
+						</li>
+						<li class="nav-list-item">
+							<a class="nav-list-link link" href="">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+				<a class="contact-number link" href="tel:+38 044 111 11 11"
+					>+38 044 111 11 11</a
+				>
+				<button class="modal-button" type="button">онлайн-запись</button>
+			</div>
 		</header>
 		<main>
 			<!-- HERO -->
 			<section>
-				<div>
-					<ul class="social-link-list list">
-						<li class="social-link-list-item">
-							<a class="social-link-list-link link" href="">Instagram</a>
-						</li>
-						<li class="social-link-list-item">
-							<a class="social-link-list-link link" href="">Youtube</a>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<p class="overtitle" lang="en">A hair salon for men in Kyiv</p>
-					<h1 class="main-title" lang="en">BarberShop</h1>
-					<p class="description" lang="en">
-						Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
-						со вкусом.
-					</p>
+				<div class="container hero-container">
+					<div class="hero-left-side">
+						<ul class="social-link-list list">
+							<li class="social-link-list-item">
+								<a class="social-link-list-link link" href="">Instagram</a>
+							</li>
+							<li class="social-link-list-item">
+								<a class="social-link-list-link link" href="">Youtube</a>
+							</li>
+						</ul>
+					</div>
+					<div class="hero-right-side">
+						<p class="overtitle overtitle-theme-dark" lang="en">
+							A hair salon for men in Kyiv
+						</p>
+						<h1 class="main-title" lang="en">BarberShop</h1>
+						<p class="description" lang="en">
+							Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
+							и со вкусом.
+						</p>
+					</div>
 				</div>
 			</section>
 			<!-- ABOUT -->
-			<section>
-				<div>
-					<div>
-						<ul class="list">
+			<section class="section">
+				<div class="container about-container">
+					<div class="about-left-side">
+						<ul class="about-gallery list">
 							<li>
 								<img
 									src="./images/about.image.jpg"
@@ -90,12 +98,12 @@
 							</li>
 						</ul>
 					</div>
-					<div>
-						<h2 class="overtitle">О НАС</h2>
-						<h3 class="title title-theme-light">
+					<div class="about-right-side">
+						<h2 class="overtitle overtitle-theme-light">О НАС</h2>
+						<h3 class="title title-theme-light about-title">
 							Лучший Барбершоп твоего города
 						</h3>
-						<p class="description">
+						<p class="description about-description">
 							Если ты хочешь добавить в свой образ больше уверенности – тебе
 							точно к нам.
 						</p>
@@ -351,16 +359,12 @@
 							>
 						</li>
 						<li>
-							<a
-								class="link contact-list-item"
-								href="tel:+380441111111"
+							<a class="link contact-list-item" href="tel:+380441111111"
 								>+38 044 111 11 11</a
 							>
 						</li>
 						<li>
-							<a
-								class="contact-list-item"
-								href="mailto:barbershop@email.com"
+							<a class="contact-list-item" href="mailto:barbershop@email.com"
 								>barbershop@email.com</a
 							>
 						</li>

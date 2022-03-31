@@ -41,7 +41,54 @@ address {
 .link {
 	text-decoration: none;
 }
+.section {
+	padding-top: 130px;
+	padding-bottom: 130px;
+}
+.container {
+	width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.overtitle {
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1, 36;
+	/* identical to box height */
+
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+.overtitle-theme-dark {
+	color: rgba(157, 164, 189, 0.6);
+}
+.overtitle-theme-light {
+	color: var(--secondary-text-color-theme-light);
+}
 /* HEADER */
+.header {
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.header-container {
+	display: flex;
+	align-items: center;
+}
+.navigation {
+	display: flex;
+	align-items: center;
+}
+.nav-list {
+	display: flex;
+	align-items: center;
+	margin-left: 70px;
+}
+.nav-list-item:not(:last-child) {
+	margin-right: 40px;
+}
 .nav-list-link {
 	font-weight: 600;
 	font-size: 12px;
@@ -55,6 +102,8 @@ address {
 	color: var(--accent-color);
 }
 .contact-number {
+	margin-right: 40px;
+	margin-left: auto;
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 1, 33;
@@ -87,6 +136,12 @@ address {
 	color: var(--primary-text-color-theme-light);
 }
 /* HERO */
+.hero-container {
+	display: flex;
+}
+.hero-left-side {
+	width: 100px;
+}
 .social-link-list-link {
 	font-weight: 600;
 	font-size: 11px;
@@ -101,18 +156,13 @@ address {
 .social-link-list-link:focus {
 	color: var(--accent-color);
 }
-.overtitle {
-	font-weight: 600;
-	font-size: 11px;
-	line-height: 1, 36;
-	/* identical to box height */
-
-	letter-spacing: 0.1em;
-	text-transform: uppercase;
-
-	color: rgba(157, 164, 189, 0.6);
+.hero-right-side {
+	padding-top: 272px;
+	padding-bottom: 206px;
+	padding-left: 100px;
 }
 .main-title {
+	margin-bottom: 20px;
 	font-family: var(--secondary-font-family);
 	font-weight: 700;
 	font-size: 72px;
@@ -123,22 +173,37 @@ address {
 
 	/* color: #FFFFFF; */
 }
-.descriptiion {
+.description {
 	font-weight: 400;
 	font-size: 18px;
-	line-height: 1, 66;
+	line-height: 1.66;
 	/* or 167% */
 
 	letter-spacing: 0.02em;
 
-	color: #9da4bd;
+	color: var(--primary-text-color-theme-light);
 }
 /* ABOUT */
+.about-container {
+	display: flex;
+	flex-basis: calc((100% - 30px) / 2);
+	gap: 30px;
+	justify-content: space-between;
+}
+.about-right-side {
+	margin-left: 34px;
+}
+.about-gallery {
+	display: flex;
+	flex-basis: calc((100% - 30px) / 2);
+	gap: 30px;
+	justify-content: space-between;
+}
 .title {
 	font-family: var(--secondary-font-family);
 	font-weight: 700;
 	font-size: 42px;
-	line-height: 1, 16;
+	line-height: 1.16;
 	letter-spacing: 0.05em;
 
 	color: #303030;
@@ -146,15 +211,25 @@ address {
 .title-theme-light {
 	color: var(--secondary-text-color-theme-light);
 }
-.descriptiion-about {
+.about-title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.about-description {
+	margin-bottom: 20px;
+	width: 500px;
+}
+.description-about {
+	margin-right: 40px;
+	margin-bottom: 40px;
 	font-weight: 400;
 	font-size: 14px;
-	line-height: 1, 85;
+	line-height: 1.86;
 	/* or 186% */
 
 	letter-spacing: 0.02em;
 
-	color: #555555;
+	color: var(--primary-text-color-theme-light);
 }
 /* SERVICES */
 /* .title-theme-dark {
@@ -174,53 +249,53 @@ address {
 /* ADVANTAGES */
 .advantages-list-quantity {
 	font-weight: 700;
-font-size: 42px;
-line-height: 57px;
-text-align: center;
-letter-spacing: 0.05em;
+	font-size: 42px;
+	line-height: 57px;
+	text-align: center;
+	letter-spacing: 0.05em;
 
-color: #303030;
+	color: #303030;
 }
 .advantages-list-description {
 	font-weight: 600;
-font-size: 11px;
-line-height: 15px;
-text-align: center;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: center;
 
-color: #303030;
+	color: #303030;
 }
 .description-theme-light {
 	font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-/* or 167% */
+	font-size: 18px;
+	line-height: 30px;
+	/* or 167% */
 
-letter-spacing: 0.02em;
+	letter-spacing: 0.02em;
 
-color: var(--primary-text-color-theme-light);
+	color: var(--primary-text-color-theme-light);
 }
 /* EMPLOYEES */
 .employees-name {
 	font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-/* identical to box height */
+	font-size: 18px;
+	line-height: 25px;
+	/* identical to box height */
 
-text-align: center;
-letter-spacing: 0.02em;
+	text-align: center;
+	letter-spacing: 0.02em;
 
-color: #303030;
+	color: #303030;
 }
 .employees-position {
 	font-weight: 400;
-font-size: 14px;
-line-height: 19px;
-/* identical to box height */
+	font-size: 14px;
+	line-height: 19px;
+	/* identical to box height */
 
-text-align: center;
-letter-spacing: 0.02em;
+	text-align: center;
+	letter-spacing: 0.02em;
 
-color: #FF6C00;
+	color: #ff6c00;
 }
 /* PICTURES */
 /* CONTACT FORM */
@@ -228,42 +303,42 @@ color: #FF6C00;
 /* FOOTER */
 .contact-list-item {
 	font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-/* or 167% */
+	font-size: 18px;
+	line-height: 30px;
+	/* or 167% */
 
-letter-spacing: 0.02em;
+	letter-spacing: 0.02em;
 
-color: #9DA4BD;
+	color: #9da4bd;
 }
 .footer-overtitle {
 	font-weight: 600;
-font-size: 11px;
-line-height: 15px;
-/* identical to box height */
+	font-size: 11px;
+	line-height: 15px;
+	/* identical to box height */
 
-letter-spacing: 0.1em;
-text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 
-/* color: #FFFFFF; */
+	/* color: #FFFFFF; */
 }
 .footer-work-hours {
 	font-weight: 400;
-font-size: 18px;
-line-height: 30px;
-/* identical to box height, or 167% */
+	font-size: 18px;
+	line-height: 30px;
+	/* identical to box height, or 167% */
 
-letter-spacing: 0.02em;
+	letter-spacing: 0.02em;
 
-color: #9DA4BD;
+	color: #9da4bd;
 }
 .copyright {
 	font-weight: 600;
-font-size: 11px;
-line-height: 15px;
-/* identical to box height */
+	font-size: 11px;
+	line-height: 15px;
+	/* identical to box height */
 
-letter-spacing: 0.2em;
+	letter-spacing: 0.2em;
 
-color: #9DA4BD;
+	color: #9da4bd;
 }
