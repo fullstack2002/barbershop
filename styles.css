@@ -70,6 +70,19 @@ address {
 .overtitle-theme-light {
 	color: var(--secondary-text-color-theme-light);
 }
+.description-theme-dark {
+	color: var(--primary-text-color-theme-dark);
+}
+.description-theme-light {
+	color: var(--primary-text-color-theme-light);
+}
+.modal-btn-theme-light {
+	color: var(--secondary-text-color-theme-light);
+}
+
+.modal-btn-theme-dark {
+	color: var(--secondary-text-color-theme-dark);
+}
 /* HEADER */
 .header {
 	padding-top: 32px;
@@ -135,7 +148,7 @@ address {
 .modal-button:hover,
 .modal-button:focus {
 	background-color: var(--accent-color);
-	color: var(--primary-text-color-theme-light);
+	color: var(--secondary-text-color-theme-dark);
 }
 /* HERO */
 .hero-container {
@@ -159,9 +172,17 @@ address {
 	color: var(--accent-color);
 }
 .hero-right-side {
+	background-image: linear-gradient(rgba(25, 28, 38, 0.2),
+		rgba(25, 28, 38, 0.2)), url(./images/hero-background.jpg);
+		background-size: cover;
+		background-color: var(--secondary-text-color-theme-light);
 	padding-top: 272px;
 	padding-bottom: 206px;
 	padding-left: 100px;
+	flex-grow: 1;
+}
+.overtitle-hero {
+	color: rgba(157, 164, 189, 0.6);
 }
 .main-title {
 	margin-bottom: 20px;
@@ -173,7 +194,7 @@ address {
 
 	letter-spacing: 0.05em;
 
-	/* color: #FFFFFF; */
+	color: #FFFFFF;
 }
 .description {
 	font-weight: 400;
@@ -183,7 +204,10 @@ address {
 
 	letter-spacing: 0.02em;
 
-	color: var(--primary-text-color-theme-light);
+	/* color: var(--primary-text-color-theme-light); */
+}
+.hero-description {
+	max-width: 400px;
 }
 /* ABOUT */
 .about-container {
@@ -234,9 +258,26 @@ address {
 	color: var(--primary-text-color-theme-light);
 }
 /* SERVICES */
-/* .title-theme-dark {
+.services {
+	background-image: url(./images/services-background.png);
+	background-size: cover;
+	background-color: #111319;
+}
+.services-list:first-child {
+	background-image: linear-gradient(180deg,
+			#171a24 0%,
+			rgba(23, 26, 36, 0.2) 100%);
+}
+
+.services-list:last-child {
+	background-image: linear-gradient(180deg,
+			#090b13 0%,
+			rgba(9, 11, 19, 0.2) 100%);
+}
+.title-theme-dark {
   color: var(--secondary-text-color-theme-dark);
-} */
+	margin-bottom: 44px;
+}
 .services-list-wrapper {
 	display: flex;
 }
@@ -309,21 +350,14 @@ address {
 
 	color: #303030;
 }
-.description-theme-light {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 30px;
-	/* or 167% */
-
-	letter-spacing: 0.02em;
-
-	color: var(--primary-text-color-theme-light);
-}
 .advantages-desctiption {
 	max-width: 460px;
 	margin-top: 20px;
 }
 /* EMPLOYEES */
+.employees-section {
+	background-color: #F7F7F7;
+}
 .employees-section .title {
 	margin-bottom: 44px;
 }
