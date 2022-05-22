@@ -18,7 +18,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link rel="stylesheet" href="./styles.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
 		<!-- HEADER -->
@@ -26,7 +26,9 @@
 			<div class="container header-container">
 				<nav class="navigation">
 					<a href="">
-						<img src="./images/Logo.svg" alt="лого" />
+						<svg class="logo" width="66" height="56">
+							<use href="./images/symbol-defs.svg#logo"></use>
+						</svg>
 					</a>
 					<ul class="nav-list list">
 						<li class="nav-list-item">
@@ -46,7 +48,7 @@
 				<a class="contact-number link" href="tel:+38 044 111 11 11"
 					>+38 044 111 11 11</a
 				>
-				<button class="modal-button modal-btn-theme-light" type="button">
+				<button class="modal-button modal-btn-theme-dark" type="button">
 					онлайн-запись
 				</button>
 			</div>
@@ -56,14 +58,14 @@
 			<section>
 				<div class="container hero-container">
 					<div class="hero-left-side">
-						<ul class="social-link-list list">
+						<!-- <ul class="social-link-list list">
 							<li class="social-link-list-item">
 								<a class="social-link-list-link link" href="">Instagram</a>
 							</li>
 							<li class="social-link-list-item">
 								<a class="social-link-list-link link" href="">Youtube</a>
 							</li>
-						</ul>
+						</ul> -->
 					</div>
 					<div class="hero-right-side">
 						<p class="overtitle overtitle-hero" lang="en">

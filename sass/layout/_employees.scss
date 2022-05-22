@@ -1,0 +1,41 @@
+.employees-section {
+  background-color: #F7F7F7;
+}
+.employees-section .title {
+  margin-bottom: 44px;
+}
+.employees-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.employees-card {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.employees-content-wrapper {
+  padding-top: 30px;
+  padding-left: 82px;
+  padding-right: 82px;
+}
+.employees-name {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #303030;
+}
+.employees-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #ff6c00;
+}
