@@ -5,6 +5,29 @@
 .hero-left-side {
   width: 100px;
 }
+.social-link-list {
+  transform: rotate(-90deg) translate(19px);
+  display: flex;
+  align-items: center;
+  transform-origin: top left;
+  position: relative;
+}
+.social-link-list::before {
+  content: " ";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background-color: #303030;
+  left: -40px;
+  top: 9px;
+}
+.social-link-list .social-link-list-link {
+  margin-left: 40px;
+}
+.hero-container .social-link-list-link:hover,
+.hero-container .social-link-list-link:focus {
+  color: #ff6c00;
+}
 .social-link-list-link {
   font-weight: 600;
   font-size: 11px;
