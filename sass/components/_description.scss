@@ -8,8 +8,9 @@
   color: var(--primary-text-color-theme-light);
 }
 .description-theme-dark {
-  color: var(--primary-text-color-theme-dark);
+  color: rgb(var(--primary-text-color-theme-dark));
 }
+
 .description-theme-light {
   color: var(--primary-text-color-theme-light);
 }

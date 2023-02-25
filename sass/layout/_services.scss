@@ -28,6 +28,14 @@
 .services-list-item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+.services-list-item::before {
+  content: '';
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(var(--primary-text-color-theme-dark), 0.12);
+  margin: 0 6px;
 }
 .services-list-item:not(:last-child) {
   margin-bottom: 20px;
@@ -39,7 +47,10 @@
   line-height: 1, 66;
   letter-spacing: 0.02em;
 
-  color: var(--primary-text-color-theme-dark);
+  color: rgb(var(--primary-text-color-theme-dark));
+}
+.services-list-name {
+  order: -1;
 }
 .services-modal-button {
   display: block;
