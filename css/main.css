@@ -393,6 +393,7 @@ address {
   width: 170px;
   min-height: 133px;
   padding: 21px;
+  background-color: #f7f7f7;
 }
 
 .advantages-list-item:nth-child(even) {
@@ -405,7 +406,15 @@ address {
   line-height: 57px;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #303030;
+  color: var(--secondary-text-color-theme-light);
+}
+
+.advantages-list-quantity::after {
+  content: "+";
+  position: absolute;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--accent-color);
 }
 
 .advantages-list-description {
@@ -413,7 +422,7 @@ address {
   font-size: 11px;
   line-height: 15px;
   text-align: center;
-  color: #303030;
+  color: var(--secondary-text-color-theme-light);
 }
 
 .advantages-desctiption {
