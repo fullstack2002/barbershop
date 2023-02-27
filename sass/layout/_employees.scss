@@ -36,6 +36,35 @@
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 30px;
 
   color: #ff6c00;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #303030;
+  }
+}
+.social-list-icon {
+  fill: var(--secondary-text-color-theme-light);
+  transition: fill 250ms linear;
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: var(--accent-color);
+  }
 }
