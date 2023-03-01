@@ -1,33 +1,51 @@
-.contact-list-item {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
-
-  color: #9da4bd;
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
-.footer-overtitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
 
-  color: #FFFFFF;
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.footer-work-hours {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0.02em;
 
-  color: #9da4bd;
-}
 .copyright {
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 1.36;
   letter-spacing: 0.2em;
-
   color: #9da4bd;
+}
+
+.social-links-list {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    display: block;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+    content: '';
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+}
+
+.social-links-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social-links-list-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--secondary-text-color-theme-light);
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
