@@ -1,0 +1,72 @@
+.booking-contacts {
+    background-color: #191c26;
+    display: flex;
+    justify-content: space-between;
+    height: 634px;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .booking-contacts .booking {
+    padding-top: 130px;
+    padding-left: 216px;
+    padding-right: 30px;
+  }
+  .booking-contacts .contacts {
+    width: 50%;
+    background-image: url('../images/contacts.png');
+  }
+  .booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 570px;
+  }
+  .booking-form input {
+    padding-bottom: 8px;
+  }
+  .booking-form input,
+  .booking-form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: rgba(157, 164, 189, 0.4);
+}
+.booking-form input:focus,
+.booking-form textarea:focus {
+  border-bottom: 1px solid #fff;
+  outline: transparent;
+  color: #fff;
+}
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.booking-form input:focus::placeholder,
+.booking-form textarea:focus::placeholder {
+  color: #fff;
+}
+
+.booking-form input {
+  width: 270px;
+  height: 24px;
+  margin-bottom: 44px;
+}
+.booking-form .textarea-wrapper {
+  width: 100%;
+  margin-bottom: 44px;
+}
+.booking-form textarea {
+  width: 570px;
+  height: 76px;
+  resize: none;
+  display: block;
+}
+.booking-form .button {
+  display: inline-block;
+}
+
+.booking-form .name-input + input {
+  margin-left: 30px;
+}

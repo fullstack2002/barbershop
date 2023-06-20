@@ -480,6 +480,7 @@ address {
 .social-list {
   display: flex;
   justify-content: space-between;
+  border: 2px soild red;
 }
 
 .social-list-link {
@@ -490,14 +491,10 @@ address {
   height: 44px;
   background-color: #ffffff;
   border-radius: 50%;
-  transition: background-color 250ms linear;
-}
-.social-list-link:hover, .social-list-link:focus {
-  background-color: #303030;
+  transition: fill 250ms linear;
 }
 
 .social-list-icon {
-  fill: var(--secondary-text-color-theme-light);
   transition: fill 250ms linear;
 }
 .social-list-link:hover .social-list-icon, .social-list-link:focus .social-list-icon {
@@ -570,6 +567,47 @@ address {
   color: var(--accent-color);
 }
 
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 100px;
+}
+
+.contacts .title,
+.booking .title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+contacts .contact-address {
+  font-style: normal;
+}
+
+.contacts .address-item {
+  margin-bottom: 20px;
+}
+
+.contacts .address-link {
+  display: flex;
+  align-items: center;
+  color: #9da4bd;
+}
+
+.contacts .address-link:hover {
+  color: var(--accent-color);
+}
+
+.contacts .icon {
+  margin-right: 16px;
+  fill: none;
+  stroke: currentColor;
+}
+
+.contacts .address-link:hover,
+.contacts .address-link:focus {
+  color: var(--accent-color);
+}
+
 :root {
   --primary-font-family: "Open Sans", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
@@ -578,4 +616,87 @@ address {
   --secondary-text-color-theme-dark: #ffffff;
   --secondary-text-color-theme-light: #303030;
   --accent-color: #ff6c00;
+}
+
+.booking-contacts {
+  background-color: #191c26;
+  display: flex;
+  justify-content: space-between;
+  height: 634px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.booking-contacts .booking {
+  padding-top: 130px;
+  padding-left: 216px;
+  padding-right: 30px;
+}
+
+.booking-contacts .contacts {
+  width: 50%;
+  background-image: url("../images/contacts.png");
+}
+
+.booking-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 570px;
+}
+
+.booking-form input {
+  padding-bottom: 8px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  border-bottom: 1px solid #fff;
+  outline: transparent;
+  color: #fff;
+}
+
+.booking-form input::placeholder,
+.booking-form textarea::placeholder {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.booking-form input:focus::placeholder,
+.booking-form textarea:focus::placeholder {
+  color: #fff;
+}
+
+.booking-form input {
+  width: 270px;
+  height: 24px;
+  margin-bottom: 44px;
+}
+
+.booking-form .textarea-wrapper {
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.booking-form textarea {
+  width: 570px;
+  height: 76px;
+  resize: none;
+  display: block;
+}
+
+.booking-form .button {
+  display: inline-block;
+}
+
+.booking-form .name-input + input {
+  margin-left: 30px;
 }/*# sourceMappingURL=main.css.map */

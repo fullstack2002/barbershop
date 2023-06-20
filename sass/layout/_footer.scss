@@ -49,3 +49,39 @@
     color: var(--accent-color);
   }
 }
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  padding-left: 100px;
+}
+.contacts .title,
+.booking .title {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+contacts .contact-address {
+  font-style: normal;
+}
+
+.contacts .address-item {
+  margin-bottom: 20px;
+}
+
+.contacts .address-link {
+  display: flex;
+  align-items: center;
+  color: #9da4bd;
+}
+.contacts .address-link:hover {
+  color: var(--accent-color);
+}
+.contacts .icon {
+  margin-right: 16px;
+  fill: none;
+  stroke: currentColor;
+}
+
+.contacts .address-link:hover,
+.contacts .address-link:focus {
+  color: var(--accent-color);
+}

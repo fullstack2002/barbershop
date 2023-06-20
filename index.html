@@ -70,8 +70,7 @@
 						<h1 class="main-title">BarberShop</h1>
 						<p class="description description-theme-dark hero-description">
 							We are experts in trendy men’s haircuts. We work quickly,
-							carefully and with style.
-						</p>
+							carefully and with style.						</p>
 					</div>
 				</div>
 			</section>
@@ -233,9 +232,23 @@
 								height="346px"
 							/>
 							<div class="employees-content-wrapper">
-								<h3 class="employees-name">John Smith</h3>
+								<h3 class="employees-name">Michele Doe</h3>
 								<p class="employees-position">Extreme Barber</p>
 								<ul class="social-list list">
+									<li>
+										<a class="social-list-link link" href="#">
+											<svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#instagram"></use>
+                      </svg>
+										</a>
+									</li>
+									<li>
+										<a class="social-list-link link" href="#">
+											<svg class="social-list-icon" width="20" height="20">
+                        <use href="./images/symbol-defs.svg#twitter"></use>
+                      </svg>
+										</a>
+									</li>
 									<li>
 										<a class="social-list-link link" href="#">
 											<svg class="social-list-icon" width="20" height="20">
@@ -379,35 +392,75 @@
 				</div>
 			</section>
 			<!-- CONTACT FORM -->
-			<section>
-				<h2 class="title">Online booking</h2>
-				<!-- <button class="modal-button modal-btn-theme-dark" type="button">отправить</button> -->
+			<section class="booking-contacts">
+				<section class="booking">
+					<h2 class="title">Online-booking</h2>
+					<form name="booking-form" class="booking-form">
+					  <input
+						type="text"
+						name="name-input"
+						class="name-input"
+						placeholder="Name*"
+					  />
+					  <input
+						type="tel"
+						name="tel-input"
+						class="tel-input"
+						placeholder="Phone*"
+					  />
+					  <div class="textarea-wrapper">
+						<textarea
+						  name="booking-text"
+						  id="booking-text"
+						  placeholder="Message"
+						></textarea>
+					  </div>
+					  <button class="modal-button modal-btn-theme-dark" type="submit">submit</button>
+					</form>
+				  </section>
 			</section>
 			<!-- CONTACTS -->
-			<section>
+			<section class="contacts">
 				<h2 class="title">Contacts</h2>
-				<address>
-					<ul class="list">
-						<li>
-							<a
-								class="link contact-list-item"
-								href="https://goo.gl/maps/fSdhoyAyDwtJdrEC6"
-								target="_blank"
-								>st. Vasilkovaya, 7A Kiev, 08132</a
-							>
-						</li>
-						<li>
-							<a class="link contact-list-item" href="tel:+380441111111"
-								>+38 044 111 11 11</a
-							>
-						</li>
-						<li>
-							<a class="contact-list-item" href="mailto:barbershop@email.com"
-								>barbershop@email.com</a
-							>
-						</li>
+				<address class="contact-address">
+					<ul class="list contacts-list">
+					  <li class="item address-item">
+						<a
+						  class="address-link map-pin-link link"
+						  href="https://goo.gl/maps/89p51jthK1xaxgvP6"
+						  target="_blank"
+						  rel="noopener nofollow noreferree"
+						>
+						  <svg class="map-pin-icon icon" width="24" height="24">
+							<use href="./images/symbol-defs.svg#map-pin"></use>
+						  </svg>
+						  <span>st. Vasilkovaya, 7A Kiev, 08132</span></a
+						>
+					  </li>
+					  <li class="item address-item">
+						<a
+						  class="address-link phone-link link"
+						  href="tel:+380441111111"
+						>
+						  <svg class="phone-icon icon" width="24" height="24">
+							<use href="./images/symbol-defs.svg#phone"></use>
+						  </svg>
+						  <span>+38 044 111 11 11</span>
+						</a>
+					  </li>
+					  <li class="item address-item">
+						<a
+						  class="address-link mail-link link"
+						  href="mailto:barbershop@email.com"
+						>
+						  <svg class="mail-icon icon" width="24" height="24">
+							<use href="./images/symbol-defs.svg#mail"></use>
+						  </svg>
+						  <span>barbershop@email.com</span>
+						</a>
+					  </li>
 					</ul>
-				</address>
+				  </address>
 				<p class="footer-overtitle">Work hours</p>
 				<p class="footer-work-hours">Every day from 9:00 to 22:00</p>
 			</section>
